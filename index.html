@@ -1,227 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Barbelli | Infrastructure & Security Analyst</title>
-    <meta name="description" content="Infrastructure & Security Analyst focused on stability, monitoring, automation and continuous improvement in enterprise environments." />
+<title>Barbelli | Infrastructure & Security Analyst</title>
+<meta name="description" content="Infrastructure & Security Analyst focused on stability, security, monitoring and continuous improvement.">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
 
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .glass {
-            background: rgba(255, 255, 255, 0.04);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-        }
-    </style>
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(148,163,184,0.25);
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.375rem;
+  color: #cbd5f5;
+  font-size: 0.75rem;
+}
+</style>
 </head>
 
-<body class="bg-slate-900 text-slate-300 antialiased selection:bg-slate-600 selection:text-white">
+<body class="bg-slate-900 text-slate-300 antialiased">
 
 <!-- NAV -->
 <nav class="fixed w-full z-50 glass border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="flex items-center justify-between h-16">
-            <div class="font-bold text-white text-xl tracking-tight">
-                BARBELLI<span class="text-slate-500">.SEC</span>
-            </div>
-            <div class="hidden md:flex space-x-8 text-sm">
-                <a href="#about" class="hover:text-white transition">About</a>
-                <a href="#skills" class="hover:text-white transition">Skills</a>
-                <a href="#projects" class="hover:text-white transition">Projects</a>
-                <a href="#experience" class="hover:text-white transition">Experience</a>
-                <a href="#contact" class="bg-slate-100 text-slate-900 px-4 py-2 rounded font-semibold hover:bg-white transition">Contact</a>
-            </div>
-        </div>
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="text-xl font-bold text-white">
+      BARBELLI<span class="text-slate-500">.SEC</span>
     </div>
+    <div class="hidden md:flex gap-8 text-sm">
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#skills" class="hover:text-white">Skills</a>
+      <a href="#experience" class="hover:text-white">Experience</a>
+      <a href="#contact" class="bg-slate-100 text-slate-900 px-4 py-2 rounded font-semibold">Contact</a>
+    </div>
+  </div>
 </nav>
 
-<!-- ABOUT -->
+<!-- HERO -->
 <section id="about" class="pt-36 pb-24 max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+  <div class="grid md:grid-cols-2 gap-14 items-center">
 
-        <div class="space-y-6">
-            <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wide bg-slate-400 text-slate-900 rounded-full">
-                Infrastructure & Security Analyst
-            </span>
+    <div class="space-y-6 fade-up">
+      <span class="inline-block px-3 py-1 bg-slate-400 text-slate-900 text-xs font-semibold rounded-full">
+        Infrastructure & Security Analyst
+      </span>
 
-            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
-                Stability, Security <br class="hidden sm:block" />
-                and <span class="text-slate-400">Continuous Improvement</span>
-            </h1>
+      <h1 class="text-4xl md:text-6xl font-bold text-white glow-text">
+        Stability.<br>
+        Security.<br>
+        <span class="text-slate-400">Continuous Improvement.</span>
+      </h1>
 
-            <p class="text-lg text-slate-400 leading-relaxed">
-                I work with infrastructure and security in corporate and industrial environments.
-                My focus is on building stable, secure and observable systems through monitoring,
-                automation and well-defined operational processes.
-                <br /><br />
-                I strongly believe in continuous learning and practical improvement, applying best
-                practices such as ITIL and COBIT while evolving with modern tools and technologies.
-            </p>
+      <p class="text-lg text-slate-400 leading-relaxed">
+        Infrastructure and security professional working in corporate and industrial environments.
+        Focused on stability, observability, automation and operational excellence.
+        <br><br>
+        Strong believer in continuous learning and practical evolution.
+      </p>
 
-            <div class="flex flex-wrap gap-4 pt-4">
-                <a href="#projects" class="border border-slate-600 px-6 py-3 rounded hover:bg-slate-800 transition">
-                    View Projects
-                </a>
-                <a href="https://b4rbelli.github.io/" target="_blank" class="text-slate-400 hover:text-white transition">
-                    Portfolio Website →
-                </a>
-            </div>
-        </div>
-
-        <div class="flex justify-center md:justify-end">
-            <div class="relative w-80 h-80 md:w-96 md:h-96 bg-slate-800 rounded-xl overflow-hidden border border-slate-700 shadow-xl">
-                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=900"
-                     alt="Infrastructure and Security"
-                     class="object-cover w-full h-full opacity-80 hover:opacity-100 transition" />
-                <div class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent">
-                    <p class="text-white font-semibold">Samuel Barbelli</p>
-                    <p class="text-xs text-slate-400">Infrastructure & Security</p>
-                </div>
-            </div>
-        </div>
-
+      <div class="flex gap-4">
+        <a href="#experience" class="border border-slate-600 px-6 py-3 rounded hover:bg-slate-800">
+          View Experience
+        </a>
+      </div>
     </div>
+
+    <div class="flex justify-center md:justify-end fade-up">
+      <div class="w-80 h-80 md:w-96 md:h-96 bg-slate-800 rounded-xl overflow-hidden border border-slate-700 shadow-xl float">
+        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=900"
+             class="object-cover w-full h-full opacity-90">
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="py-20 bg-slate-800/40">
-    <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-slate-500 pl-4">
-            Core Skills
-        </h2>
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-white mb-12 fade-up">Core Skills</h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="bg-slate-900 p-6 rounded-lg border border-slate-700">
-                <h3 class="text-xl font-semibold text-white mb-4">Infrastructure & Systems</h3>
-                <div class="flex flex-wrap gap-2 text-xs">
-                    <span class="badge">Linux (Debian / CentOS)</span>
-                    <span class="badge">Windows Server</span>
-                    <span class="badge">Active Directory</span>
-                    <span class="badge">VMware / Hyper-V</span>
-                    <span class="badge">Dell Servers</span>
-                </div>
-            </div>
-
-            <div class="bg-slate-900 p-6 rounded-lg border border-slate-700">
-                <h3 class="text-xl font-semibold text-white mb-4">Networking</h3>
-                <div class="flex flex-wrap gap-2 text-xs">
-                    <span class="badge">TCP/IP & VLANs</span>
-                    <span class="badge">Cisco / HP / 3Com</span>
-                    <span class="badge">FortiGate Firewall</span>
-                    <span class="badge">Wireless (Cisco / UniFi)</span>
-                </div>
-            </div>
-
-            <div class="bg-slate-900 p-6 rounded-lg border border-slate-700">
-                <h3 class="text-xl font-semibold text-white mb-4">Monitoring & Operations</h3>
-                <div class="flex flex-wrap gap-2 text-xs">
-                    <span class="badge">Zabbix</span>
-                    <span class="badge">Grafana</span>
-                    <span class="badge">SNMP</span>
-                    <span class="badge">ServiceNow</span>
-                    <span class="badge">ITIL & COBIT</span>
-                </div>
-            </div>
-
-            <div class="bg-slate-900 p-6 rounded-lg border border-slate-700">
-                <h3 class="text-xl font-semibold text-white mb-4">Security</h3>
-                <div class="flex flex-wrap gap-2 text-xs">
-                    <span class="badge">Wazuh (SIEM)</span>
-                    <span class="badge">Greenbone</span>
-                    <span class="badge">Endpoint Protection</span>
-                    <span class="badge">WSUS & Patch Management</span>
-                </div>
-            </div>
-
+      <div class="bg-slate-900 p-6 rounded-lg border border-slate-700 fade-up">
+        <h3 class="text-white font-semibold mb-4">Infrastructure</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge">Linux</span>
+          <span class="badge">Windows Server</span>
+          <span class="badge">VMware</span>
+          <span class="badge">Active Directory</span>
         </div>
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-lg border border-slate-700 fade-up">
+        <h3 class="text-white font-semibold mb-4">Networking</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge">VLANs</span>
+          <span class="badge">Cisco</span>
+          <span class="badge">FortiGate</span>
+          <span class="badge">Wireless</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-lg border border-slate-700 fade-up">
+        <h3 class="text-white font-semibold mb-4">Monitoring & Security</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge">Zabbix</span>
+          <span class="badge">Grafana</span>
+          <span class="badge">Wazuh (SIEM)</span>
+          <span class="badge">Patch Management</span>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="py-20">
-    <div class="max-w-4xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-white mb-12 text-center">
-            Professional Experience
-        </h2>
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-white mb-12 text-center fade-up">
+      Professional Experience
+    </h2>
 
-        <div class="space-y-10 border-l border-slate-700 pl-6">
+    <div class="space-y-10 border-l border-slate-700 pl-6">
 
-            <div>
-                <h3 class="text-xl font-semibold text-white">Infrastructure Analyst</h3>
-                <p class="text-sm text-slate-400">Michelin — Jan 2023 · Present</p>
-                <p class="mt-2 text-slate-400 text-sm">
-                    Managing Windows and Linux servers in industrial environments,
-                    supporting networks, monitoring platforms and endpoint security solutions.
-                </p>
-            </div>
+      <div class="fade-up">
+        <h3 class="text-xl font-semibold text-white">
+          Technical Support & Customer Success Analyst
+        </h3>
+        <p class="text-sm text-slate-400">Clear IT — Present</p>
+        <ul class="mt-3 text-sm text-slate-400 list-disc list-inside space-y-1">
+          <li>Delivered L1, L2, and L3 technical support with fast issue resolution.</li>
+          <li>Led customer onboarding, deployments and initial technical training.</li>
+          <li>Performed proactive monitoring to prevent service impact.</li>
+          <li>Managed SLAs, updates and maintenance for service continuity.</li>
+          <li>Acted as trusted technical advisor, supporting retention and upsell opportunities.</li>
+        </ul>
+      </div>
 
-            <div>
-                <h3 class="text-xl font-semibold text-white">IT Analyst (Remote)</h3>
-                <p class="text-sm text-slate-400">Cresco Holding — 2022 · 2023</p>
-                <p class="mt-2 text-slate-400 text-sm">
-                    Responsible for technical documentation, process standardization
-                    and infrastructure knowledge transfer.
-                </p>
-            </div>
+      <div class="fade-up">
+        <h3 class="text-xl font-semibold text-white">Infrastructure Analyst</h3>
+        <p class="text-sm text-slate-400">Michelin — 2023</p>
+        <p class="mt-2 text-sm text-slate-400">
+          Managed Windows and Linux servers in industrial environments, supporting networks,
+          monitoring platforms and endpoint security.
+        </p>
+      </div>
 
-            <div>
-                <h3 class="text-xl font-semibold text-white">Infrastructure & Systems Roles</h3>
-                <p class="text-sm text-slate-400">2019 · 2022</p>
-                <p class="mt-2 text-slate-400 text-sm">
-                    Worked with servers, networks, monitoring tools, backups and
-                    multi-level IT support in enterprise environments.
-                </p>
-            </div>
-
-        </div>
     </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
 <footer id="contact" class="bg-slate-950 py-14 border-t border-slate-900">
-    <div class="max-w-6xl mx-auto px-6 text-center space-y-6">
+  <div class="max-w-6xl mx-auto px-6 text-center space-y-4 fade-up">
 
-        <h2 class="text-2xl font-bold text-white">Let’s Connect</h2>
+    <h2 class="text-2xl font-bold text-white">Let’s Connect</h2>
 
-        <p class="text-slate-400 max-w-2xl mx-auto">
-            Open to infrastructure, security and consulting opportunities.
-            Feel free to reach out.
-        </p>
+    <p class="text-slate-400">
+      Email: <a href="mailto:samuelbarbelli@hotmail.com" class="hover:text-white">samuelbarbelli@hotmail.com</a><br>
+      Business: <a href="mailto:consultoria@securebridge.com.br" class="hover:text-white">consultoria@securebridge.com.br</a><br>
+      Phone: <a href="tel:+5592994090148" class="hover:text-white">+55 92 99409-0148</a>
+    </p>
 
-        <div class="space-y-2 text-sm">
-            <p>Email: <a href="mailto:samuelbarbelli@hotmail.com" class="hover:text-white">samuelbarbelli@hotmail.com</a></p>
-            <p>Business Email: <a href="mailto:consultoria@securebridge.com.br" class="hover:text-white">consultoria@securebridge.com.br</a></p>
-            <p>Phone / WhatsApp: <a href="tel:+5592994090148" class="hover:text-white">+55 92 99409-0148</a></p>
-        </div>
-
-        <div class="flex justify-center gap-6 pt-4">
-            <a href="https://github.com/B4rbelli" target="_blank" class="hover:text-white">GitHub</a>
-            <a href="https://b4rbelli.github.io/" target="_blank" class="hover:text-white">Portfolio</a>
-            <a href="https://securebridge.com.br" target="_blank" class="hover:text-white">SecureBridge</a>
-        </div>
-
-        <p class="text-xs text-slate-600 pt-6">
-            © 2026 Samuel Barbelli · Built with Tailwind CSS
-        </p>
+    <div class="flex justify-center gap-6 pt-4 text-sm">
+      <a href="https://github.com/B4rbelli" target="_blank">GitHub</a>
+      <a href="https://b4rbelli.github.io/" target="_blank">Portfolio</a>
+      <a href="https://securebridge.com.br" target="_blank">SecureBridge</a>
     </div>
+
+    <p class="text-xs text-slate-600 pt-6">
+      © 2026 Samuel Barbelli
+    </p>
+  </div>
 </footer>
 
-<style>
-    .badge {
-        padding: 0.25rem 0.5rem;
-        background: #1e293b;
-        border: 1px solid #334155;
-        border-radius: 0.375rem;
-        color: #cbd5f5;
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
     }
-</style>
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
